@@ -1,86 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>bolo</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="utf-8">
+  <title>Dark Dashboard</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">D</div>
+        <div>
+          <div>Dashly</div>
+          <small>analytics</small>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">Overview</a></li>
+          <li><a href="#">Performance</a></li>
+          <li><a href="#">Wallet</a></li>
+          <li><a href="#">Statistics</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        Upgrade your plan to get more detailed analytics and custom reports.
+      </div>
+    </aside>
 
-	<div class="flex-container">
-		<section id="heading">
-			<a href="#"><img src="img/meun.svg" id="img-1"></a>
-			<a href="#"><img src="img/logo.png" id="logo"></a>
-			<a href="#"><img src="img/Group 4.png" class="contact"></a>
-			<a href="#"><img src="img/Group 5.png" class="contact-1"></a>
-			<a href="#"><img src="img/Group 10.png" class="contact-2"></a>
-		</section>
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1>Dashboard</h1>
+          <p class="label">Welcome back, here is your latest report.</p>
+        </div>
+        <div class="search">
+          <span>Search</span>
+          <div>Quickly find reports, metrics, or invoices</div>
+        </div>
+        <div class="profile">
+          <div class="profile-info">
+            <strong>Sayuri Tanaka</strong>
+            <span>Product Lead</span>
+          </div>
+          <div class="avatar"></div>
+        </div>
+      </header>
 
+      <section class="cards">
+        <div class="card">
+          <div class="label">Total Revenue</div>
+          <div class="value">$86,420</div>
+          <div class="trend positive">+12.4% this month</div>
+        </div>
+        <div class="card">
+          <div class="label">Active Users</div>
+          <div class="value">24,518</div>
+          <div class="trend positive">+6.8% this week</div>
+        </div>
+        <div class="card">
+          <div class="label">Churn Rate</div>
+          <div class="value">2.4%</div>
+          <div class="trend negative">-0.6% vs last month</div>
+        </div>
+      </section>
 
-		<section id="body1">
-			<div class="div-1">
-			<h1 id="h-1">MIVI Present</h1>
-			</div>
-			<h1 class="h-2">BLACK</h1>
-			<div class="body3">
-				<h2 class="h-3">Collection</h2>
-			</div>
-			<p class="p-1">The truly wireless M80 DuoPods are a complete package from HD sound to a great battery life. All you want in a pair of earbuds- packed and delivered.</p>
-			<h2 class="h-4">READ MORE</h2>
-			<p class="p-2">SELECT COLOR</p>
-			<div class="body4"></div>
-			<div class="body5"></div>
-			<div class="body6"></div>
-			<div class="price-container">
-				<p class="p-3">$149</p>
-				<div class="body7"><p class="p-4">Add To Cart</p></div>
-			</div>
-		</section>
+      <section class="content-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2>Revenue Overview</h2>
+              <p class="label">Last 12 months performance</p>
+            </div>
+            <div class="legend">
+              <span><i></i>Current</span>
+              <span><i style="background:#23d5ff"></i>Forecast</span>
+            </div>
+          </div>
+          <div class="chart">
+            <div class="chart-lines"></div>
+            <div class="chart-path"></div>
+          </div>
+        </div>
 
-		<section id="body2" >
-			
-			<div class="body8">
-				<img src="img/black.3e1b9a569b81ca8696f7f84971565613.png" class="img-1">
-				<p class="p-5">61 REVIEWS</p>
-				<img src="img/Repeat Grid 1.png" class="img-2">
-			</div>
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2>Tasks</h2>
+              <p class="label">Today</p>
+            </div>
+            <span class="label">View all</span>
+          </div>
+          <div class="tasks">
+            <div class="task">
+              <span>Sync marketing reports</span>
+              <span class="task-status success">Done</span>
+            </div>
+            <div class="task">
+              <span>Update sales pipeline</span>
+              <span class="task-status warning">Pending</span>
+            </div>
+            <div class="task">
+              <span>Finalize Q3 targets</span>
+              <span class="task-status danger">Overdue</span>
+            </div>
+            <div class="task">
+              <span>Design new onboarding</span>
+              <span class="task-status success">Done</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<div class="body9">
-				<img src="img/Group 22.png"  class="img-3" >
+      <section class="footer-row">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2>Team Progress</h2>
+              <p class="label">Campaign milestones</p>
+            </div>
+          </div>
+          <div class="progress">
+            <div>
+              <div class="label">Q3 Launch</div>
+              <div class="progress-bar"><span></span></div>
+            </div>
+            <div>
+              <div class="label">Brand refresh</div>
+              <div class="progress-bar"><span style="width:48%"></span></div>
+            </div>
+          </div>
+        </div>
 
-				<div class="radio-container">
-
-					<div class="radio radio-top">
-						<span class="radio-inner"></span>
-					</div>
-					<div class="radio">
-						<span class="radio-inner"></span>
-					</div>
-
-										<div class="radio">
-						<span class="radio-inner background-white"></span>
-					</div>
-
-					<div class="radio">
-						<span class="radio-inner"></span>
-					</div>
-
-
-					<div class="radio">
-						<span class="radio-inner"></span>
-					</div>
-					
-					<div class="right-panel-image-container">
-						<img src="img/Path 431.png" class="img-4">
-						<img src="img/Shape.png" class="img-5">
-					</div>
-				</div>
-			</div>
-			
-			
-		</section>
-	</div>
-
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2>Quick KPIs</h2>
+              <p class="label">Last 30 days</p>
+            </div>
+          </div>
+          <div class="kpi-grid">
+            <div class="kpi">Conversion rate<strong>5.2%</strong></div>
+            <div class="kpi">New trials<strong>1,284</strong></div>
+            <div class="kpi">Avg. session<strong>4m 21s</strong></div>
+            <div class="kpi">Support tickets<strong>38</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
